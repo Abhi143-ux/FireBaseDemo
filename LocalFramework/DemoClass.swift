@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 public  class Employee {
     
@@ -13,5 +14,12 @@ public  class Employee {
     
     public static func doSomeTing()-> String {
         return "YEs Running"
+    }
+    
+    public static func fb() {
+        Analytics.logEvent("home", parameters: [:])
+    }
+    public static func configure() {
+        FirebaseApp.configure()
     }
 }
