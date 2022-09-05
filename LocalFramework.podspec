@@ -58,7 +58,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  # spec.framework  = "SomeFramework"
+ # spec.framework  = "Demo/FrameWork1.framework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
@@ -71,10 +71,11 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-   spec.requires_arc = true
+  # spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+ # spec.ios.vendored_frameworks = 'Demo/FrameWork1.framework'
   spec.static_framework = true
   spec.dependency   'Firebase'
   spec.dependency   'Firebase/Core'

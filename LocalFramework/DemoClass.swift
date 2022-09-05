@@ -6,7 +6,8 @@
 //
 
 import Foundation
-import Firebase
+import FirebaseCore
+import FirebaseAnalytics
 
 public  class Employee {
     
@@ -16,8 +17,8 @@ public  class Employee {
         return "YEs Running"
     }
     
-    public static func fb() {
-        Analytics.logEvent("home", parameters: [:])
+    public static func fb(eventName: String) {
+        Analytics.logEvent(eventName, parameters: [:])
     }
     public static func configure() {
         FirebaseApp.configure()
