@@ -20,19 +20,20 @@ Pod::Spec.new do |spec|
   spec.summary      = "This Demo"
   spec.description  = "Firebase Demo"
   
-  # spec.homepage     = "http://EXAMPLE/LocalFramework"
+   spec.homepage     = "https://github.com/Abhi143-ux/FireBaseDemo.git"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   spec.license      = "MIT"
+  
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
   spec.author             = { "abhishek kohli" => "Abhishek.Kohli@tatanexarc.com" }
  
   spec.platform     = :ios, "13.0"
 
-  #spec.source       = { :git => "http://EXAMPLE/LocalFramework.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/Abhi143-ux/FireBaseDemo.git", :tag => "1.0.0" }
 
-  spec.source_files  = "LocalFramework"
+  spec.source_files  = "LocalFramework/**/*"
 
   # spec.public_header_files = "Classes/**/*.h"
 
