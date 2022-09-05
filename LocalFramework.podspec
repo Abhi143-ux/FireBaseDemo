@@ -71,16 +71,16 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+   spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
-    # spec.static_framework = true
-    # spec.dependency   'Firebase'
+  spec.static_framework = true
+  spec.dependency   'Firebase'
   spec.dependency   'Firebase/Core'
-   # spec.dependency   'Firebase/Crashlytics'
+  spec.dependency   'Firebase/Crashlytics'
   spec.dependency   'Firebase/Analytics'
-   # spec.dependency   'Firebase/Performance'
-    #spec.dependency   'Firebase/Messaging'
-   # spec.dependency   'Firebase/DynamicLinks'
+  spec.dependency   'Firebase/Performance'
+  spec.dependency   'Firebase/Messaging'
+  spec.dependency   'Firebase/DynamicLinks'
 end

@@ -4,12 +4,18 @@
 target 'LocalFramework' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'GoogleAnalytics'
   pod 'Firebase/Core'
-#  pod 'Firebase/Crashlytics'
+  pod 'Firebase/Crashlytics'
   pod 'Firebase/Analytics'
-#  pod 'Firebase/Performance'
-#  pod 'Firebase/Messaging'
-#  pod 'Firebase/DynamicLinks'
-  # Pods for LocalFramework
-
+  pod 'Firebase/Performance'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/DynamicLinks'
+  pod 'Firebase'
+  
+  post_install do |installer|
+  installer.pods_project.build_configurations.each do |config|
+     config.build_settings['VALID_ARCHS'] = 'arm64, arm64e, x86_64'
+    end
+  end
 end

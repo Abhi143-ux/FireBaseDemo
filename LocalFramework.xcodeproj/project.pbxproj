@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		941FC3FE28C5D2DE00629D83 /* LocalFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 941FC3FD28C5D2DE00629D83 /* LocalFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		941FC40528C5F7EB00629D83 /* DemoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941FC40428C5F7EB00629D83 /* DemoClass.swift */; };
-		FC68B21EAE54A8DC43DB80F0 /* Pods_LocalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB058BC3B769EE793D15FB08 /* Pods_LocalFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +25,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC68B21EAE54A8DC43DB80F0 /* Pods_LocalFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +64,6 @@
 				9C66BD188B30566DBCB56556 /* Pods-LocalFramework.debug.xcconfig */,
 				F526D4970F4EC20723731BBE /* Pods-LocalFramework.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -322,6 +319,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -352,6 +350,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
