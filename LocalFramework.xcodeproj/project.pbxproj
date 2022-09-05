@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		941FC3FE28C5D2DE00629D83 /* LocalFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 941FC3FD28C5D2DE00629D83 /* LocalFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		941FC40528C5F7EB00629D83 /* DemoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 941FC40428C5F7EB00629D83 /* DemoClass.swift */; };
+		FC68B21EAE54A8DC43DB80F0 /* Pods_LocalFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB058BC3B769EE793D15FB08 /* Pods_LocalFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		941FC3FA28C5D2DE00629D83 /* LocalFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocalFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		941FC3FD28C5D2DE00629D83 /* LocalFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalFramework.h; sourceTree = "<group>"; };
 		941FC40428C5F7EB00629D83 /* DemoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoClass.swift; sourceTree = "<group>"; };
+		9C66BD188B30566DBCB56556 /* Pods-LocalFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalFramework.debug.xcconfig"; path = "Target Support Files/Pods-LocalFramework/Pods-LocalFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		F526D4970F4EC20723731BBE /* Pods-LocalFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalFramework.release.xcconfig"; path = "Target Support Files/Pods-LocalFramework/Pods-LocalFramework.release.xcconfig"; sourceTree = "<group>"; };
+		FB058BC3B769EE793D15FB08 /* Pods_LocalFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LocalFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC68B21EAE54A8DC43DB80F0 /* Pods_LocalFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +38,8 @@
 			children = (
 				941FC3FC28C5D2DE00629D83 /* LocalFramework */,
 				941FC3FB28C5D2DE00629D83 /* Products */,
+				B4C4C3AFC1151B49A251B863 /* Pods */,
+				DF04A469005138CD1DBF107B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +60,24 @@
 			path = LocalFramework;
 			sourceTree = "<group>";
 		};
+		B4C4C3AFC1151B49A251B863 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C66BD188B30566DBCB56556 /* Pods-LocalFramework.debug.xcconfig */,
+				F526D4970F4EC20723731BBE /* Pods-LocalFramework.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DF04A469005138CD1DBF107B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB058BC3B769EE793D15FB08 /* Pods_LocalFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 941FC40128C5D2DE00629D83 /* Build configuration list for PBXNativeTarget "LocalFramework" */;
 			buildPhases = (
+				83DDB6DA02FA0D02ACF4903E /* [CP] Check Pods Manifest.lock */,
 				941FC3F528C5D2DE00629D83 /* Headers */,
 				941FC3F628C5D2DE00629D83 /* Sources */,
 				941FC3F728C5D2DE00629D83 /* Frameworks */,
@@ -127,6 +153,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83DDB6DA02FA0D02ACF4903E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LocalFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		941FC3F628C5D2DE00629D83 /* Sources */ = {
@@ -191,7 +242,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -248,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -262,6 +313,7 @@
 		};
 		941FC40228C5D2DE00629D83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C66BD188B30566DBCB56556 /* Pods-LocalFramework.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +343,7 @@
 		};
 		941FC40328C5D2DE00629D83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F526D4970F4EC20723731BBE /* Pods-LocalFramework.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
