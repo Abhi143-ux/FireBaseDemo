@@ -77,11 +77,15 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
  # spec.ios.vendored_frameworks = 'Demo/FrameWork1.framework'
   spec.static_framework = true
-  spec.dependency   'Firebase'
+  # spec.dependency   'Firebase'
   spec.dependency   'Firebase/Core'
   spec.dependency   'Firebase/Crashlytics'
   spec.dependency   'Firebase/Analytics'
   spec.dependency   'Firebase/Performance'
   spec.dependency   'Firebase/Messaging'
   spec.dependency   'Firebase/DynamicLinks'
+  spec.dependency   'GoogleTagManager'
+  spec.dependency   'WebEngage'
+  spec.dependency   'WebEngageGTM'
+  spec.dependency   'GoogleAnalytics'
 end
